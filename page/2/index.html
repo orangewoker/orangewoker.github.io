@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>黄梁Dream - 生活明朗，万物可爱</title><meta name="author" content="book"><meta name="copyright" content="book"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我生来就是高山而非溪流 ，我欲于群峰之巅俯视平庸的沟壑。我生来就是人杰而非草芥，我站在伟人之肩藐视卑微的懦夫！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄梁Dream">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="黄梁Dream">
+<meta property="og:description" content="我生来就是高山而非溪流 ，我欲于群峰之巅俯视平庸的沟壑。我生来就是人杰而非草芥，我站在伟人之肩藐视卑微的懦夫！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:author" content="book">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '黄梁Dream',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">黄梁Dream</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">黄梁Dream</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/26/%E5%B1%B1%E6%9E%97%E6%B9%96%E7%95%94%E9%97%B4/" title="山林湖畔间-CPI新商业零售集群景观设计"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/07/eeafb64deb855ce3403df87e3d7fbdd5.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="山林湖畔间-CPI新商业零售集群景观设计"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/26/%E5%B1%B1%E6%9E%97%E6%B9%96%E7%95%94%E9%97%B4/" title="山林湖畔间-CPI新商业零售集群景观设计">山林湖畔间-CPI新商业零售集群景观设计</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-25T16:00:00.000Z" title="发表于 2024-07-26 00:00:00">2024-07-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">**昱道景观**：CPI 是成都万华在麓湖的一处新零售业态的目的地。通过因地制宜的设计原则，对原有场地的改造更新，将” 去设计化” 概念贯穿始终，使其更适应新的场所使命。利用现状植物群落、错落的建筑布置、场地的丰富地形，穿插布置各种游逛通道，拓展商业品牌景观面、经营外拓空间等，打造出移步易景、轻松丰富的环境空间，使场地环境对商业支撑得到最大程度体现。 **Yudao Studio**：CPI is a new retail destination by Chengdu Wide Horizon Real Estate Development Co., Ltd. located at Luhu Lake. By adhering to context-specific design principles and continuously incorporating the concept of “de-design,” the renovation and upgrade of the original site have made it more suitable for its...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/26/%E9%BA%93%E6%B9%96_C25/" title="麓湖_C25"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/07/1d843dfceea026c6e6e85b84ecfdcb5b.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="麓湖_C25"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/26/%E9%BA%93%E6%B9%96_C25/" title="麓湖_C25">麓湖_C25</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-25T16:00:00.000Z" title="发表于 2024-07-26 00:00:00">2024-07-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">因澈景观：项目位于麓湖样板岛的中部核心区，建筑沿湖岸分布，坐拥观湖视野。设计师还是考虑运用更自然的手法，充分利用其湖岸资源的优势，以自然为牵引，构建隐匿于雨林中的度假场景。 Interesting Landscape: The project is located in the central core area of Luxe Lakes Demonstration Island, with buildings distributed along the lakeshore and a great view of the lake. A more natural approach is considered in the design, taking full advantage of the lakeshore resources to construct a resort scene hidden in the rainforest with nature as the clue. ▽项目视频 video   雨林之旅 Trip in Rainforest 在这片雨林天地中...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/25/%E4%BD%BF%E7%94%A8%20Hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="使用 Hexo 搭建个人博客并部署到云服务器"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/07/456f435fde499a88691e5be8902e0923.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 Hexo 搭建个人博客并部署到云服务器"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/25/%E4%BD%BF%E7%94%A8%20Hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="使用 Hexo 搭建个人博客并部署到云服务器">使用 Hexo 搭建个人博客并部署到云服务器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-24T16:00:00.000Z" title="发表于 2024-07-25 00:00:00">2024-07-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">1 整体流程 在本地运行 hexo deploy 命令，Hexo 会将生成的静态文件 (hexo generate) 推送到远程的 Git 仓库  在 Git 仓库中，配置一个钩子脚本，它会在接收到推送后执行——将最新的静态文件强制覆盖到指定的工作目录  在 Nginx 服务器中，配置访问根路径的请求指向该工作目录  本地环境准备  2.1 安装 Node.js 和 Git这两个我是很早就安装好了，网上也有大量的资料，我就不重复了，这里主要记录 Hexo 相关笔记 (1) 验证 Node.js 是否安装成功，打开 cmd 输入node -v，出现版本信息，则 ok 12C:\Users\gzl&gt;node -vv18.16.1  (2) 验证 Git 是否安装成功，打开 cmd 输入git --version，出现版本信息，则 ok 12C:\Users\gzl&gt;git --versiongit version 2.39.0.windows.2  同时在文件夹中点击右键会出现 Git Bash Here  2.2 安装 Hexo(1) 新建一个文件夹用来存储个人博客：E...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/24/%E5%9C%A8%E8%8A%B1%E5%9B%AD%E9%87%8C%E6%97%85%E8%A1%8C/" title="在花园里旅行"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/05/541e8e799c07a328872bce3e1f8c5025.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在花园里旅行"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/24/%E5%9C%A8%E8%8A%B1%E5%9B%AD%E9%87%8C%E6%97%85%E8%A1%8C/" title="在花园里旅行">在花园里旅行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-23T16:00:00.000Z" title="发表于 2024-07-24 00:00:00">2024-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">Phillip Withers：SaltBush 是一次穿越景观、环境和花园的旅程，也一次通过花园重新发现当地环境对我们的意义的旅程。这趟旅程始于盐碱海岸沙丘，穿越荒野和湿地栖息地，最终到达内陆 “灌木丛”。这里是一个令人沉浸、观察、交流和思考的聚集地。 Phillip Withers:  SaltBush is a journey; a journey through a garden to rediscover what our local environment means to us. The journey begins in the ‘Salt’ coastal dunes, traverses heath and wetland habitat and culminates in an inland ‘Bush’ setting. Here a gathering place promotes immersion, observation, connection, and reflection.         该花园由回收材料和当地材料建造而成，全部由维多利亚时代...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/24/%E5%A4%A9%E8%BE%B9%E7%9A%84%E4%BA%91/" title="天边的云"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/05/abeefab2259efe06ffde4d1caeab9e7c.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="天边的云"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/24/%E5%A4%A9%E8%BE%B9%E7%9A%84%E4%BA%91/" title="天边的云">天边的云</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-23T16:00:00.000Z" title="发表于 2024-07-24 00:00:00">2024-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">Thanks BLUES for authorizing the publication of the project on mooool, Text description provided by BLUES. 蓝调国际：此刻，我们所考虑的，是必须构思出尊重自然、亲近自然，创造 “为此地而生的设计”。——伊东丰雄 BLUES: “At this moment, what we are considering is the necessity to conceive a design that respects and embraces nature, creating something that is born for this place.” ▽苍山雪，洱海月 Cangshan snow, Erhai moon  01 起 °- 叙述：关于一个天边的云，在大理的故事 Narration: The Tale of a Distant Cloud in Dali “天边的云”，一个不符合商业逻辑的项目，如果只看她是一个民宿项目的话，你会读不懂她。如果要读懂 “天边的云” 首先要...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/24/%E7%94%9F%E6%80%81%E4%B8%8E%E5%88%9B%E6%84%8F%E7%9B%B8%E7%BB%93%E5%90%88%EF%BC%8C%E4%B8%BA%E4%BA%BA%E7%B1%BB%E4%BD%93%E9%AA%8C%E8%80%8C%E8%AE%BE%E8%AE%A1/" title="生态与创意相结合，为人类体验而设计"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/05/9705bde2c60a320fcb0017a2d3b90b72.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="生态与创意相结合，为人类体验而设计"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/24/%E7%94%9F%E6%80%81%E4%B8%8E%E5%88%9B%E6%84%8F%E7%9B%B8%E7%BB%93%E5%90%88%EF%BC%8C%E4%B8%BA%E4%BA%BA%E7%B1%BB%E4%BD%93%E9%AA%8C%E8%80%8C%E8%AE%BE%E8%AE%A1/" title="生态与创意相结合，为人类体验而设计">生态与创意相结合，为人类体验而设计</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-23T16:00:00.000Z" title="发表于 2024-07-24 00:00:00">2024-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">为当下而设计，为未来而规划。美国老牌景观公司之一 RHAA 成立于 1950 年，是一家集景观、规划和城市设计于一体，设计师不超过 50 人的中等规模公司。“为人类体验而设计，在尺度、环境和情感的多维层面上创造令人难忘的场所” 是他们的设计宗旨。RHAA 美国老牌景观公司之一 RHAA 成立于 1950 年，是一家集景观、规划和城市设计于一体，设计师不超过 50 人的中等规模公司。“为人类体验而设计，在尺度、环境和情感的多维层面上创造令人难忘的场所” 是他们的设计宗旨。的项目从小型设计到大型社区规划和机构校园，涉及各种规模和复杂程度，但无论大区域还是设计细节，始终将生态与创意相结合，只为充分呈现场地的故事和灵魂。 Our projects range from small-scale design projects to large new community plans and institutional campuses. We work with both public and private clients, and we thrive on working with c...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/24/%E7%A6%8F%E5%B7%9E%E2%80%9C%E6%A9%84%E6%A6%84%E4%BA%94%E5%A4%A7%E5%8E%9D%E2%80%9D%20%E9%A9%AF%E5%8C%96%E8%AE%BA/" title="福州“橄榄五大厝” 驯化论"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/07/098e8575e11be21de6c3aa9ccc8ac487.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="福州“橄榄五大厝” 驯化论"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/24/%E7%A6%8F%E5%B7%9E%E2%80%9C%E6%A9%84%E6%A6%84%E4%BA%94%E5%A4%A7%E5%8E%9D%E2%80%9D%20%E9%A9%AF%E5%8C%96%E8%AE%BA/" title="福州“橄榄五大厝” 驯化论">福州“橄榄五大厝” 驯化论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-23T16:00:00.000Z" title="发表于 2024-07-24 00:00:00">2024-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">**退化建筑**：该项目位于福州仓山区仓前路 129-131 号，是一栋沿街的三进式宅院。原建筑由清光绪末年福州的橄榄大王、第一个开发出多种橄榄制品的福州人、有着 “橄榄五” 之称的郑则铭兴建。因此它也得名“橄榄五大厝”。 **DEVOLUTION**：This project is a three-entrance house along the street, located at No. 129-131 Cangqian Road, Cangshan District, Fuzhou. The original building was built by Zheng Zeming, the olive king of Fuzhou in the late Guangxu period(1875–1908) of the Qing Dynasty, the first Fuzhou native to develop a variety of olive products, and known as the “Olive Five”. Thus it is also name...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/24/%E7%BF%A0%E9%80%B8%E8%B0%A7%E5%A2%83/" title="翠逸谧境"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/05/9e0c9c0ec91eaaff287921ac86757cd5.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="翠逸谧境"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/24/%E7%BF%A0%E9%80%B8%E8%B0%A7%E5%A2%83/" title="翠逸谧境">翠逸谧境</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-23T16:00:00.000Z" title="发表于 2024-07-24 00:00:00">2024-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">缔凡设计：古翠隐秀园区的打造，融入了 Hotel-lifestyle 理念，由一个无边水景作为中心点，串联起大泽隐秀、风动花园、风林赏艺、原野映夕、彩丘花园等梦幻而诗意的组团 “公园”。场景营造中，我们注重静谧空间中真实的使用感受，以“时间” 为线索，通过梳理出不同的主题功能植入现有场地，不同的日常活动在此进行，创造丰富度极高的生活体验。 Tifan Design: The idea of hotel-lifestyle is integrated into the design of Urban Xanadu, where a infinite waterscape connects a series of small gardens around it. When designing the landscape, we paid special attention to user experience and arranged different functions into the site according to the clue of “time”. The beau...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/23/%E8%B6%8A%E5%8D%97%E8%83%A1%E5%BF%97%E6%98%8E%E5%B8%82%E5%9B%BD%E9%99%85%E4%BC%9A%E8%AE%AE%E4%B8%AD%E5%BF%83/" title="越南胡志明市国际会议中心"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/07/cc320c7114c69da9b52fc5d2e5bfce5d.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="越南胡志明市国际会议中心"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/23/%E8%B6%8A%E5%8D%97%E8%83%A1%E5%BF%97%E6%98%8E%E5%B8%82%E5%9B%BD%E9%99%85%E4%BC%9A%E8%AE%AE%E4%B8%AD%E5%BF%83/" title="越南胡志明市国际会议中心">越南胡志明市国际会议中心</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-22T16:00:00.000Z" title="发表于 2024-07-23 00:00:00">2024-07-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">me+ architect：“面纱” 位于胡志明市北部入口，坐落在最具吸引力的市内林荫大道上，是一件在大都市背景中脱颖而出的白色杰作，同时它也是一个多功能的国际会议中心。 me+ architect：”The Veil” is located in Ho Chi Minh City’s northern entryway, on the most attractive inner-city boulevard, and is designed to be a white masterpiece that stands out in the metropolitan context. It is also a multi-purpose international conference center. ​▽建筑外观及所处环境 Exterior © Quangdam© Quangdam© Quangdam© Quangdam 该设计的灵感来自新娘婚礼上的头纱。从外观上看，“面纱” 由多段弓形的、激发情感共鸣的层次组成，它们围绕着道路设置，赋予了整体结构别样的质感。从内部看，它不仅创造...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/23/%E9%BA%93%E6%B9%96%E4%B8%80%E7%89%87%E6%A3%AE%E6%9E%97%E5%84%BF%E7%AB%A5%E5%8D%9A%E7%89%A9%E9%A6%86/" title="麓湖一片森林儿童博物馆"><img class="post-bg" src="https://lizi.s3.bitiful.net/2024/07/a6efd505a8c6693efc0859e306a34544.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="麓湖一片森林儿童博物馆"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/23/%E9%BA%93%E6%B9%96%E4%B8%80%E7%89%87%E6%A3%AE%E6%9E%97%E5%84%BF%E7%AB%A5%E5%8D%9A%E7%89%A9%E9%A6%86/" title="麓湖一片森林儿童博物馆">麓湖一片森林儿童博物馆</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-22T16:00:00.000Z" title="发表于 2024-07-23 00:00:00">2024-07-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">大料建筑：静止与运动 Stillness and Motion 在冰川与海水的不停互动下，这些平均年龄 5000 年以上的冰川冰最终会漂向大海，成为随着洋流运动不断变换位置的冰山。在我们看来，冰山的魅力除了长达数千年不变的冰块，和因随意漂流而神秘莫测的位置，也在于作家海明威提到过的水面下充满未知的八分之七。 2021 年，在成都麓湖生态城星罗棋布的湖泊与岛屿之间，我们开始着手，想要为小朋友们创造一座 “冰山”，鼓励他们去探寻大千世界中更广更深的奥秘。最初设定的设计建造周期从紧张的十个月延长到最终的两年，这期间静止与运动齐轨连辔——静态的建筑和不变的初心、变换的建造条件和无穷尽地探求，让一片森林儿童博物馆在 2023 年 10 月终于漂在了孩子们心中的海洋上。 **DL Atelier**：Through the perpetual interaction between glaciers and seawater, the glacial ice, which boasts an average age exceeding 5,000 years, will ultimately...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">book</div><div class="author-info-description">我生来就是高山而非溪流 ，我欲于群峰之巅俯视平庸的沟壑。我生来就是人杰而非草芥，我站在伟人之肩藐视卑微的懦夫！</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/19/MIX%E7%93%B7%E7%A0%96%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BC%8C%E9%87%8D%E5%BA%86%20%20%E6%9C%89%E7%89%A9%E7%A9%BA%E9%97%B4%E8%AE%BE%E8%AE%A1/" title="MIX瓷砖工作室，重庆 / 有物空间设计">MIX瓷砖工作室，重庆 / 有物空间设计</a><time datetime="2025-09-19T13:01:42.000Z" title="发表于 2025-09-19 21:01:42">2025-09-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/29/%E5%A4%AA%E5%87%BA%E7%89%87%E4%BA%86%EF%BC%81%EF%BC%81%EF%BC%81%E5%90%88%E8%82%A5%E6%96%B0%E5%BC%80%E7%9A%84%E5%A4%8D%E5%90%88%E5%9B%AD%E8%89%BA%EF%BC%81/" title="太出片了！！！合肥新开的复合园艺！"><img src="https://cubox.pro/c/filters:no_upscale()?imageUrl=https%3A%2F%2Fsns-img-al.xhscdn.com%2F7fdaa05a-7196-3088-cf9c-8885bdb79eee%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&amp;valid=false" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="太出片了！！！合肥新开的复合园艺！"/></a><div class="content"><a class="title" href="/2024/11/29/%E5%A4%AA%E5%87%BA%E7%89%87%E4%BA%86%EF%BC%81%EF%BC%81%EF%BC%81%E5%90%88%E8%82%A5%E6%96%B0%E5%BC%80%E7%9A%84%E5%A4%8D%E5%90%88%E5%9B%AD%E8%89%BA%EF%BC%81/" title="太出片了！！！合肥新开的复合园艺！">太出片了！！！合肥新开的复合园艺！</a><time datetime="2024-11-28T16:00:00.000Z" title="发表于 2024-11-29 00:00:00">2024-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/22/%E6%97%A9%E5%90%AC%E8%AF%B4Niko%20and%E7%9A%84%E5%B8%86%E5%B8%83%E8%A2%8B%E5%A5%BD%E7%9C%8B%E6%B2%A1%E6%83%B3%E5%88%B0%E8%BF%99%E4%B9%88%E5%A5%BD%E7%9C%8B/" title="早听说Niko and的帆布袋好看没想到这么好看"><img src="https://cubox.pro/c/filters:no_upscale()?imageUrl=https%3A%2F%2Fsns-webpic-qc.xhscdn.com%2F202411192333%2F67d790a356a3356c2a51d7bd442db6b5%2F1040g008311rr591l0u0049pf6ou99g1vdsdke50!nd_dft_wlteh_webp_3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="早听说Niko and的帆布袋好看没想到这么好看"/></a><div class="content"><a class="title" href="/2024/11/22/%E6%97%A9%E5%90%AC%E8%AF%B4Niko%20and%E7%9A%84%E5%B8%86%E5%B8%83%E8%A2%8B%E5%A5%BD%E7%9C%8B%E6%B2%A1%E6%83%B3%E5%88%B0%E8%BF%99%E4%B9%88%E5%A5%BD%E7%9C%8B/" title="早听说Niko and的帆布袋好看没想到这么好看">早听说Niko and的帆布袋好看没想到这么好看</a><time datetime="2024-11-21T16:00:00.000Z" title="发表于 2024-11-22 00:00:00">2024-11-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/11/%E5%AE%89%E4%B8%8E%E9%9B%B7%E8%98%91%E8%A1%97%E5%BA%97/" title="安与雷蘑街店"><img src="https://lizi.s3.bitiful.net/2024/08/3bd7ee3745e608e63b58ed0b782b5f8a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="安与雷蘑街店"/></a><div class="content"><a class="title" href="/2024/08/11/%E5%AE%89%E4%B8%8E%E9%9B%B7%E8%98%91%E8%A1%97%E5%BA%97/" title="安与雷蘑街店">安与雷蘑街店</a><time datetime="2024-08-10T16:00:00.000Z" title="发表于 2024-08-11 00:00:00">2024-08-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/10/%E5%AE%89%E4%B8%8E%E9%9B%B7%E9%81%82%E5%AE%81%E5%BA%97/" title="安与雷遂宁店"><img src="https://lizi.s3.bitiful.net/2024/08/7024f826fecfd3cf064c8322b85c0da2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="安与雷遂宁店"/></a><div class="content"><a class="title" href="/2024/08/10/%E5%AE%89%E4%B8%8E%E9%9B%B7%E9%81%82%E5%AE%81%E5%BA%97/" title="安与雷遂宁店">安与雷遂宁店</a><time datetime="2024-08-09T16:00:00.000Z" title="发表于 2024-08-10 00:00:00">2024-08-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8E%9F%E5%88%9B/"><span class="card-category-list-name">原创</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%BD%AC%E8%BD%BD/"><span class="card-category-list-name">转载</span><span class="card-category-list-count">28</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/clippings/" style="font-size: 1.1em; color: #999">clippings</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">学习</a> <a href="/tags/%E5%85%89%E7%85%A7/" style="font-size: 1.1em; color: #999">光照</a> <a href="/tags/%E5%8E%9F%E6%9C%A8%E9%A3%8E/" style="font-size: 1.1em; color: #999">原木风</a> <a href="/tags/%E8%87%AA%E7%84%B6/" style="font-size: 1.37em; color: #99a4b2">自然</a> <a href="/tags/%E8%AE%BE%E8%AE%A1/" style="font-size: 1.1em; color: #999">设计</a> <a href="/tags/%E9%B2%9C%E8%8A%B1/" style="font-size: 1.1em; color: #999">鲜花</a> <a href="/tags/%E5%85%AC%E5%85%B1%E7%A9%BA%E9%97%B4/" style="font-size: 1.5em; color: #99a9bf">公共空间</a> <a href="/tags/%E5%AE%89%E4%B8%8E%E9%9B%B7/" style="font-size: 1.1em; color: #999">安与雷</a> <a href="/tags/%E9%9C%B2%E8%90%A5/" style="font-size: 1.1em; color: #999">露营</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 1.17em; color: #999c9f">其他</a> <a href="/tags/%E5%9B%AD%E8%89%BA/" style="font-size: 1.23em; color: #999ea6">园艺</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/%E5%95%86%E4%B8%9A%E7%A9%BA%E9%97%B4/" style="font-size: 1.3em; color: #99a1ac">商业空间</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 1.1em; color: #999">服务器</a> <a href="/tags/%E5%BA%97%E9%9D%A2/" style="font-size: 1.43em; color: #99a6b9">店面</a> <a href="/tags/%E6%99%AF%E8%A7%82/" style="font-size: 1.23em; color: #999ea6">景观</a> <a href="/tags/%E6%B0%B4%E6%B3%A5/" style="font-size: 1.23em; color: #999ea6">水泥</a> <a href="/tags/%E5%B1%8B%E9%A1%B6/" style="font-size: 1.17em; color: #999c9f">屋顶</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/11/">
+            <span class="card-archive-list-date">
+              十一月 2024
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/08/">
+            <span class="card-archive-list-date">
+              八月 2024
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/07/">
+            <span class="card-archive-list-date">
+              七月 2024
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/06/">
+            <span class="card-archive-list-date">
+              六月 2024
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/05/">
+            <span class="card-archive-list-date">
+              五月 2024
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/01/">
+            <span class="card-archive-list-date">
+              一月 2024
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">33</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-19T13:29:32.518Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By book</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
